@@ -9,7 +9,7 @@
             lblJoule.Text = lblKwh.Text = string.Empty;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCalc_Click(object sender, EventArgs e)
         {
             double velocidade = double.Parse(tbVelocidade.Text); // em km/h
             double massa = double.Parse(tbMassa.Text);
@@ -25,7 +25,7 @@
 
             if (!energiaBaixa)
             {
-                // cuidado
+                MessageBox.Show("Cuidado! Energia baixa!", "Cuidado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

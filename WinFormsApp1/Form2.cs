@@ -21,7 +21,7 @@
                 )
             {
                 // se alguma das notas estiver fora
-                lblMedia.Text = "Notas fora do intervalo.";
+                MessageBox.Show("Notas fora do intervalo.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

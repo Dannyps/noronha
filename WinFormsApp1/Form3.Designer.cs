@@ -77,7 +77,7 @@
             btnCalc.TabIndex = 4;
             btnCalc.Text = "Calcular";
             btnCalc.UseVisualStyleBackColor = true;
-            btnCalc.Click += button1_Click;
+            btnCalc.Click += btnCalc_Click;
             // 
             // Form3
             // 

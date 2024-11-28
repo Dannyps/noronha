@@ -28,72 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            button1 = new Button();
-            label1 = new Label();
+            tbNum1 = new TextBox();
+            tbNum2 = new TextBox();
+            tbNum3 = new TextBox();
+            tbNum4 = new TextBox();
+            btnVerificar = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // tbNum1
             // 
-            textBox1.Location = new Point(55, 47);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            tbNum1.Location = new Point(55, 47);
+            tbNum1.Name = "tbNum1";
+            tbNum1.PlaceholderText = "Número 1";
+            tbNum1.Size = new Size(100, 23);
+            tbNum1.TabIndex = 0;
             // 
-            // textBox2
+            // tbNum2
             // 
-            textBox2.Location = new Point(181, 47);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
+            tbNum2.Location = new Point(181, 47);
+            tbNum2.Name = "tbNum2";
+            tbNum2.PlaceholderText = "Número 2";
+            tbNum2.Size = new Size(100, 23);
+            tbNum2.TabIndex = 1;
             // 
-            // textBox3
+            // tbNum3
             // 
-            textBox3.Location = new Point(304, 47);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 2;
+            tbNum3.Location = new Point(304, 47);
+            tbNum3.Name = "tbNum3";
+            tbNum3.PlaceholderText = "Número 3";
+            tbNum3.Size = new Size(100, 23);
+            tbNum3.TabIndex = 2;
             // 
-            // textBox4
+            // tbNum4
             // 
-            textBox4.Location = new Point(430, 47);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 3;
+            tbNum4.Location = new Point(430, 47);
+            tbNum4.Name = "tbNum4";
+            tbNum4.PlaceholderText = "Número 4";
+            tbNum4.Size = new Size(100, 23);
+            tbNum4.TabIndex = 3;
             // 
-            // button1
+            // btnVerificar
             // 
-            button1.Location = new Point(80, 207);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(190, 212);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 5;
-            label1.Text = "label1";
+            btnVerificar.Location = new Point(80, 207);
+            btnVerificar.Name = "btnVerificar";
+            btnVerificar.Size = new Size(75, 23);
+            btnVerificar.TabIndex = 4;
+            btnVerificar.Text = "Verificar";
+            btnVerificar.UseVisualStyleBackColor = true;
+            btnVerificar.Click += btnVerificar_Click;
             // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnVerificar);
+            Controls.Add(tbNum4);
+            Controls.Add(tbNum3);
+            Controls.Add(tbNum2);
+            Controls.Add(tbNum1);
             Name = "Form4";
             Text = "Form4";
             ResumeLayout(false);
@@ -102,11 +95,10 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private Button button1;
-        private Label label1;
+        private TextBox tbNum1;
+        private TextBox tbNum2;
+        private TextBox tbNum3;
+        private TextBox tbNum4;
+        private Button btnVerificar;
     }
 }

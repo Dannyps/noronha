@@ -28,79 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
-            haNegativos_label = new Label();
-            primeiro_label = new Label();
-            ultimo_label = new Label();
-            numero = new TextBox();
-            button1 = new Button();
+            lbNums = new ListBox();
+            lblHaNegativos = new Label();
+            lblPrimeiro = new Label();
+            lblUltimo = new Label();
+            tbNumero = new TextBox();
+            btnGo = new Button();
             SuspendLayout();
             // 
-            // listBox1
+            // lbNums
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(541, 12);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(235, 334);
-            listBox1.TabIndex = 0;
+            lbNums.FormattingEnabled = true;
+            lbNums.ItemHeight = 15;
+            lbNums.Location = new Point(541, 12);
+            lbNums.Name = "lbNums";
+            lbNums.Size = new Size(235, 334);
+            lbNums.TabIndex = 0;
             // 
-            // haNegativos_label
+            // lblHaNegativos
             // 
-            haNegativos_label.AutoSize = true;
-            haNegativos_label.Location = new Point(46, 217);
-            haNegativos_label.Name = "haNegativos_label";
-            haNegativos_label.Size = new Size(38, 15);
-            haNegativos_label.TabIndex = 1;
-            haNegativos_label.Text = "label1";
+            lblHaNegativos.AutoSize = true;
+            lblHaNegativos.Location = new Point(46, 217);
+            lblHaNegativos.Name = "lblHaNegativos";
+            lblHaNegativos.Size = new Size(78, 15);
+            lblHaNegativos.TabIndex = 1;
+            lblHaNegativos.Text = "Há Negativos";
             // 
-            // primeiro_label
+            // lblPrimeiro
             // 
-            primeiro_label.AutoSize = true;
-            primeiro_label.Location = new Point(46, 247);
-            primeiro_label.Name = "primeiro_label";
-            primeiro_label.Size = new Size(38, 15);
-            primeiro_label.TabIndex = 2;
-            primeiro_label.Text = "label1";
+            lblPrimeiro.AutoSize = true;
+            lblPrimeiro.Location = new Point(46, 247);
+            lblPrimeiro.Name = "lblPrimeiro";
+            lblPrimeiro.Size = new Size(52, 15);
+            lblPrimeiro.TabIndex = 2;
+            lblPrimeiro.Text = "Primeiro";
             // 
-            // ultimo_label
+            // lblUltimo
             // 
-            ultimo_label.AutoSize = true;
-            ultimo_label.Location = new Point(48, 277);
-            ultimo_label.Name = "ultimo_label";
-            ultimo_label.Size = new Size(38, 15);
-            ultimo_label.TabIndex = 3;
-            ultimo_label.Text = "label1";
+            lblUltimo.AutoSize = true;
+            lblUltimo.Location = new Point(48, 277);
+            lblUltimo.Name = "lblUltimo";
+            lblUltimo.Size = new Size(43, 15);
+            lblUltimo.TabIndex = 3;
+            lblUltimo.Text = "Último";
             // 
-            // numero
+            // tbNumero
             // 
-            numero.Location = new Point(44, 34);
-            numero.Name = "numero";
-            numero.Size = new Size(100, 23);
-            numero.TabIndex = 4;
-            numero.Enter += numero_Enter;
+            tbNumero.Location = new Point(44, 34);
+            tbNumero.Name = "tbNumero";
+            tbNumero.PlaceholderText = "Número";
+            tbNumero.Size = new Size(100, 23);
+            tbNumero.TabIndex = 4;
             // 
-            // button1
+            // btnGo
             // 
-            button1.Location = new Point(61, 371);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 5;
-            button1.Text = "Go";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnGo.Location = new Point(48, 371);
+            btnGo.Name = "btnGo";
+            btnGo.Size = new Size(75, 23);
+            btnGo.TabIndex = 5;
+            btnGo.Text = "Go";
+            btnGo.UseVisualStyleBackColor = true;
+            btnGo.Click += btnGo_Click;
             // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(numero);
-            Controls.Add(ultimo_label);
-            Controls.Add(primeiro_label);
-            Controls.Add(haNegativos_label);
-            Controls.Add(listBox1);
+            Controls.Add(btnGo);
+            Controls.Add(tbNumero);
+            Controls.Add(lblUltimo);
+            Controls.Add(lblPrimeiro);
+            Controls.Add(lblHaNegativos);
+            Controls.Add(lbNums);
             Name = "Form5";
             Text = "Form5";
             ResumeLayout(false);
@@ -109,11 +109,11 @@
 
         #endregion
 
-        private ListBox listBox1;
-        private Label haNegativos_label;
-        private Label primeiro_label;
-        private Label ultimo_label;
-        private TextBox numero;
-        private Button button1;
+        private ListBox lbNums;
+        private Label lblHaNegativos;
+        private Label lblPrimeiro;
+        private Label lblUltimo;
+        private TextBox tbNumero;
+        private Button btnGo;
     }
 }

@@ -7,14 +7,20 @@
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnVerificar_Click(object sender, EventArgs e)
         {
             bool haDoisParesComOMesmoValorAbsoluto = false;
 
-            int.TryParse(textBox1.Text, out int numero1);
-            int.TryParse(textBox2.Text, out int numero2);
-            int.TryParse(textBox3.Text, out int numero3);
-            int.TryParse(textBox4.Text, out int numero4);
+            bool err = int.TryParse(tbNum1.Text, out int numero1);
+            err &= int.TryParse(tbNum2.Text, out int numero2);
+            err &= int.TryParse(tbNum3.Text, out int numero3);
+            err &= int.TryParse(tbNum4.Text, out int numero4);
+
+            if (err)
+            {
+                MessageBox.Show("Erro na conversão", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             if (numero1 % 2 == 0)
             {
@@ -35,11 +41,11 @@
             // Resultado
             if (haDoisParesComOMesmoValorAbsoluto)
             {
-                label1.Text = "Há pelo menos dois números pares com o mesmo valor absoluto.";
+                MessageBox.Show("Há pelo menos dois números pares com o mesmo valor absoluto.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                label1.Text = "Não há dois números pares com o mesmo valor absoluto.";
+                MessageBox.Show("Não há dois números pares com o mesmo valor absoluto.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
