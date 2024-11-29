@@ -28,24 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            taxaJuro_textBox = new TextBox();
+            tbTaxaJuro = new TextBox();
             label1 = new Label();
-            button1 = new Button();
-            valorInicial_textBox = new TextBox();
-            prazo_textBox = new TextBox();
-            montanteFinal = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
+            btnCalc = new Button();
+            tbValorInicial = new TextBox();
+            tbPrazo = new TextBox();
+            lblMontanteFinal = new Label();
+            lblValorInicial = new Label();
+            lblTaxaJuro = new Label();
+            lblPrazo = new Label();
             SuspendLayout();
             // 
-            // taxaJuro_textBox
+            // tbTaxaJuro
             // 
-            taxaJuro_textBox.Location = new Point(170, 106);
-            taxaJuro_textBox.Name = "taxaJuro_textBox";
-            taxaJuro_textBox.Size = new Size(100, 23);
-            taxaJuro_textBox.TabIndex = 0;
-            taxaJuro_textBox.TextChanged += textBox1_TextChanged;
+            tbTaxaJuro.Location = new Point(170, 106);
+            tbTaxaJuro.Name = "tbTaxaJuro";
+            tbTaxaJuro.Size = new Size(100, 23);
+            tbTaxaJuro.TabIndex = 0;
             // 
             // label1
             // 
@@ -54,101 +53,97 @@
             label1.Name = "label1";
             label1.Size = new Size(0, 15);
             label1.TabIndex = 1;
-            label1.Click += label1_Click;
             // 
-            // button1
+            // btnCalc
             // 
-            button1.Location = new Point(170, 295);
-            button1.Name = "button1";
-            button1.Size = new Size(182, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Ação";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnCalc.Location = new Point(170, 295);
+            btnCalc.Name = "btnCalc";
+            btnCalc.Size = new Size(182, 23);
+            btnCalc.TabIndex = 2;
+            btnCalc.Text = "Ação";
+            btnCalc.UseVisualStyleBackColor = true;
+            btnCalc.Click += btnCalc_Click;
             // 
-            // valorInicial_textBox
+            // tbValorInicial
             // 
-            valorInicial_textBox.Location = new Point(170, 58);
-            valorInicial_textBox.Name = "valorInicial_textBox";
-            valorInicial_textBox.Size = new Size(100, 23);
-            valorInicial_textBox.TabIndex = 3;
+            tbValorInicial.Location = new Point(170, 58);
+            tbValorInicial.Name = "tbValorInicial";
+            tbValorInicial.Size = new Size(100, 23);
+            tbValorInicial.TabIndex = 3;
             // 
-            // prazo_textBox
+            // tbPrazo
             // 
-            prazo_textBox.Location = new Point(170, 154);
-            prazo_textBox.Name = "prazo_textBox";
-            prazo_textBox.Size = new Size(100, 23);
-            prazo_textBox.TabIndex = 4;
+            tbPrazo.Location = new Point(170, 154);
+            tbPrazo.Name = "tbPrazo";
+            tbPrazo.Size = new Size(100, 23);
+            tbPrazo.TabIndex = 4;
             // 
-            // montanteFinal
+            // lblMontanteFinal
             // 
-            montanteFinal.AutoSize = true;
-            montanteFinal.Location = new Point(79, 222);
-            montanteFinal.Name = "montanteFinal";
-            montanteFinal.Size = new Size(38, 15);
-            montanteFinal.TabIndex = 5;
-            montanteFinal.Text = "label2";
+            lblMontanteFinal.AutoSize = true;
+            lblMontanteFinal.Location = new Point(79, 222);
+            lblMontanteFinal.Name = "lblMontanteFinal";
+            lblMontanteFinal.Size = new Size(87, 15);
+            lblMontanteFinal.TabIndex = 5;
+            lblMontanteFinal.Text = "Montante Final";
             // 
-            // label2
+            // lblValorInicial
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(79, 58);
-            label2.Name = "label2";
-            label2.Size = new Size(67, 15);
-            label2.TabIndex = 6;
-            label2.Text = "Valor Inicial";
-            label2.Click += label2_Click;
+            lblValorInicial.AutoSize = true;
+            lblValorInicial.Location = new Point(79, 58);
+            lblValorInicial.Name = "lblValorInicial";
+            lblValorInicial.Size = new Size(67, 15);
+            lblValorInicial.TabIndex = 6;
+            lblValorInicial.Text = "Valor Inicial";
             // 
-            // label3
+            // lblTaxaJuro
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(79, 103);
-            label3.Name = "label3";
-            label3.Size = new Size(30, 15);
-            label3.TabIndex = 7;
-            label3.Text = "Taxa";
-            label3.Click += label3_Click;
+            lblTaxaJuro.AutoSize = true;
+            lblTaxaJuro.Location = new Point(79, 103);
+            lblTaxaJuro.Name = "lblTaxaJuro";
+            lblTaxaJuro.Size = new Size(30, 15);
+            lblTaxaJuro.TabIndex = 7;
+            lblTaxaJuro.Text = "Taxa";
             // 
-            // label4
+            // lblPrazo
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(81, 154);
-            label4.Name = "label4";
-            label4.Size = new Size(36, 15);
-            label4.TabIndex = 8;
-            label4.Text = "Prazo";
+            lblPrazo.AutoSize = true;
+            lblPrazo.Location = new Point(81, 154);
+            lblPrazo.Name = "lblPrazo";
+            lblPrazo.Size = new Size(36, 15);
+            lblPrazo.TabIndex = 8;
+            lblPrazo.Text = "Prazo";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(montanteFinal);
-            Controls.Add(prazo_textBox);
-            Controls.Add(valorInicial_textBox);
-            Controls.Add(button1);
+            Controls.Add(lblPrazo);
+            Controls.Add(lblTaxaJuro);
+            Controls.Add(lblValorInicial);
+            Controls.Add(lblMontanteFinal);
+            Controls.Add(tbPrazo);
+            Controls.Add(tbValorInicial);
+            Controls.Add(btnCalc);
             Controls.Add(label1);
-            Controls.Add(taxaJuro_textBox);
+            Controls.Add(tbTaxaJuro);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox taxaJuro_textBox;
+        private TextBox tbTaxaJuro;
         private Label label1;
-        private Button button1;
-        private TextBox valorInicial_textBox;
-        private TextBox prazo_textBox;
-        private Label montanteFinal;
-        private Label label2;
-        private Label label3;
-        private Label label4;
+        private Button btnCalc;
+        private TextBox tbValorInicial;
+        private TextBox tbPrazo;
+        private Label lblMontanteFinal;
+        private Label lblValorInicial;
+        private Label lblTaxaJuro;
+        private Label lblPrazo;
     }
 }

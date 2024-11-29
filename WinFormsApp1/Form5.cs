@@ -5,20 +5,17 @@
         public Form5()
         {
             InitializeComponent();
-        }
 
-        private void numero_Enter(object sender, EventArgs e)
-        {
-            Console.WriteLine("x");
+            lblHaNegativos.Text = lblPrimeiro.Text = lblUltimo.Text = string.Empty;
         }
 
         int primeiro, ultimo;
         int contador = 0;
         int contadorNegativos = 0;
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnGo_Click(object sender, EventArgs e)
         {
-            int n = int.Parse(numero.Text);
+            int n = int.Parse(tbNumero.Text);
 
             if (n == -1)
             {
@@ -29,11 +26,11 @@
                 else
                 {
                     // programa vai terminar
-                    haNegativos_label.Text = (contadorNegativos > 0) + "";
+                    lblHaNegativos.Text = (contadorNegativos > 0) + "";
                     // para imprimimr o contador de negativos
                     //haNegativos_label.Text = contadorNegativos + "";
-                    primeiro_label.Text = primeiro + "";
-                    ultimo_label.Text = ultimo + "";
+                    lblPrimeiro.Text = primeiro + "";
+                    lblUltimo.Text = ultimo + "";
                 }
                 return;
             }
@@ -50,7 +47,7 @@
                 contadorNegativos++;
             }
 
-            listBox1.Items.Add(n);
+            lbNums.Items.Add(n);
 
             contador++;
         }

@@ -5,12 +5,14 @@
         public Form3()
         {
             InitializeComponent();
+
+            lblJoule.Text = lblKwh.Text = string.Empty;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCalc_Click(object sender, EventArgs e)
         {
-            double velocidade = double.Parse(velocidade_textBox.Text); // em km/h
-            double massa = double.Parse(massa_textBox.Text);
+            double velocidade = double.Parse(tbVelocidade.Text); // em km/h
+            double massa = double.Parse(tbMassa.Text);
 
             velocidade = velocidade * 0.27778; // m/s
 
@@ -18,14 +20,12 @@
             double energiaEmKwh = energia / 3600000;
             bool energiaBaixa = energia < 1000;
 
-            joule_label.Text = energia + " (J)";
-            kwh__label.Text = energiaEmKwh + " (kWh)";
+            lblJoule.Text = energia + " (J)";
+            lblKwh.Text = energiaEmKwh + " (kWh)";
 
-
-            
             if (!energiaBaixa)
             {
-                // cuidado
+                MessageBox.Show("Cuidado! Energia baixa!", "Cuidado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
