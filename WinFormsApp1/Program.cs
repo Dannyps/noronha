@@ -15,7 +15,7 @@ namespace WinFormsApp1
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
@@ -31,6 +31,20 @@ namespace WinFormsApp1
             foreach (var form in forms)
             {
                 Console.WriteLine($"{i++}: {form.Name}");
+            }
+
+            if (args.Length > 0 && int.TryParse(args[0], out int number))
+            {
+                formNumber = number;
+                if (formNumber <= 0 || formNumber > forms.Length)
+                {
+                    Console.WriteLine("O número inserido não corresponde a um Form. Por favor tente novamente.");
+                    fail = true;
+                }
+                else
+                {
+                    fail = false;
+                }
             }
 
             while (fail)
